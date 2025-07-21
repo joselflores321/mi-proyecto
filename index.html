@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balnearios de Catavi - Relajate en Aguas Termales</title>
+  <meta name="description" content="Disfruta de las aguas termales naturales de Catavi, en Potosi, Bolivia." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    :root {
+      --primary-color: rgb(15, 15, 15);
+      --secondary-color: rgb(4, 243, 4);
+      --accent-color: rgb(135, 8, 151);
+      --text-dark: rgb(11, 126, 7);
+      --text-light: rgb(53, 3, 50);
+      --bg-dark: #20d3d3;
+      --font-heading: 'Playfair Display', serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      background-color: #f8f7fa;
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      padding: 1rem 0;
+    }
+
+    header .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 a {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li .btn {
+      background-color: var(--accent-color);
+      border-radius: 5px;
+      padding: 6px 12px;
+      font-size: 0.9rem;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li .btn:hover {
+      background-color: var(--secondary-color);
+      color: black;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent-color);
+    }
+
+    .hero {
+      background: linear-gradient(rgba(12, 146, 41, 0.6), rgba(12, 2, 2, 0.6)), url('https://via.placeholder.com/1500x800/008080/ffffff?text=Balnearios+de+Catavi') center/cover no-repeat;
+      color: rgb(226, 211, 3);
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-family: var(--font-heading);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: var(--primary-color);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgb(0, 0, 0);
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px;
+      font-size: 1.5rem;
+      color: var(--secondary-color);
+    }
+
+    .card p {
+      padding: 0 15px 20px;
+      font-size: 1rem;
+      color: white;
+    }
+
+    .btn {
+      background-color: var(--primary-color);
+      color: rgb(239, 236, 248);
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--secondary-color);
+    }
+
+    footer {
+      background: var(--bg-dark);
+      color: var(--text-light);
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1><a href="#inicio">Balnearios de Catavi</a></h1>
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="Hostoria">Historia</a></li>
+          <li><a href="#balnearios">Balnearios</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=-18.41199,-66.5715" target="_blank" class="btn">
+              📍 Como llegar
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2>Relajate en Aguas Termales Naturales</h2>
+    <p>Descubre los beneficios curativos de Catavi</p>
+  </section>
+  <sdction class="hero" id="Hostoria">
+    <h2>fue construido en "1921" dentro el complejo minero de la "Compania Estañeria de llallagua" y luego de la instalacion como una sauna natural 
+        pisina colectiva para hombres (Obrearo),para mujeres y familiares,y baños privados para la jerdarquia minera 
+    </sdction>
+  <section class="section" id="balnearios">
+    <h2>Nuestros Balnearios</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="pasillo.jpg" alt="Pasillo de las Saunas">
+        <h3>Pasillos</h3>
+        <p>Conformes en las aguas termales y areas verdes para disfrutar en familia.</p>
+      </div>
+      <div class="card">
+        <img src="verdes.jpg" alt="Areas verdes">
+        <h3>Areas verdes</h3>
+        <p>Relajate en las areas verdes de los balnearios.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="precios">
+    <h2>Precios de Ingreso</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Familiar por hora</h3>
+        <p>Bs. 10</p>
+      </div>
+      <div class="card">
+        <h3>Ingreso Mixto</h3>
+        <p>Bs. 3</p>
+      </div>
+      <div class="card">
+        <h3>Sauna Mujeres</h3>
+        <p>Bs. 3</p>
+      </div>
+      <div class="card">
+        <h3>Sauna Varones</h3>
+        <p>Bs. 3</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ubicacion">
+    <h2>Ubicacion en Catavi</h2>
+    <p>📍 <strong>Balnearios Catavi</strong><br>
+      Avenida 6 de Agosto, Catavi, Llallagua - Potosi, Bolivia</p>
+
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-66.576%2C-18.416%2C-66.566%2C-18.407&amp;layer=mapnik&amp;marker=-18.41199%2C-66.5715"
+      style="border:1px solid #ccc; width:100%; height:400px;"
+      allowfullscreen>
+    </iframe>
+
+    <p>
+      <small>
+        <a href="https://www.openstreetmap.org/?mlat=-18.41199&amp;mlon=-66.5715#map=16/-18.41199/-66.5715" target="_blank">
+          Ver en mapa mas grande (OpenStreetMap)
+        </a>
+      </small>
+    </p>
+
+    <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=-18.41199,-66.5715" target="_blank">
+      📍 Como llegar (Google Maps)
+    </a>
+  </section>
+
+  <section class="section" id="galeria">
+    <h2>Galeria</h2>
+    <div class="grid">
+      <div class="card"><img src="muro.jpg" alt="Piscina termal" /></div>
+      <div class="card"><img src="puente.jpg" alt="Area verde" /></div>
+      <div class="card"><img src="verdes.2.jpg" alt="Fachada" /></div>
+    </div>
+    <div class="grid">
+      <div class="card"><img src="verdes.3.jpg" alt="Piscina termal" /></div>
+      <div class="card"><img src="verdes.4.jpg" alt="Fachada" /></div>
+      <div class="card"><img src="verdes.5.jpg" alt="Fachada" /></div>
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <section class="reserva">
+      <h2>Reserva tu Sauna</h2>
+      <form action="#" method="post" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" placeholder="Tu email" required /><br /><br />
+
+        <label for="comentario">Comentario:</label><br />
+        <textarea id="comentario" name="comentario" rows="4" placeholder="Tu comentario" required></textarea><br /><br />
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+
+    <p>📍 Catavi, Potosi - Bolivia</p>
+    <p>📞 Telefonos: +591 25820598</p>
+    <p>📧 Email: <a href="mailto:info@balnearioscatavi.bo">info@balnearioscatavi.bo</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; Esperemoes que le guste los balnerios y gracias por visitarnos.</p>
+  </footer>
+
+  <script>
+    function validarFormulario() {
+      const nombre = document.getElementById("nombre").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const comentario = document.getElementById("comentario").value.trim();
+      if (!nombre || !email || !comentario) {
+        alert("Por favor, completa todos los campos.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
